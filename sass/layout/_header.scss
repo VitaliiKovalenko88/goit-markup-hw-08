@@ -15,7 +15,7 @@
   .menu-btn {
     background-color: transparent;
     border: none;
-    padding: 0;
+    padding: 10px 0;
 
     &__icon {
       width: 40px;
@@ -80,17 +80,13 @@
 
   .mobile-contacts__link--tel {
     @include font(34px, $medium, 40px);
-
     letter-spacing: 0.02em;
-
     color: $accent-color;
   }
 
   .mobile-contacts__link--mail {
     @include font(28px, $medium, 24px);
-
     letter-spacing: 0.02em;
-
     color: $primary-text-color;
   }
 }
@@ -115,6 +111,10 @@
 
   .site-nav__item {
     padding: 32px 0;
+
+    & + & {
+      margin-left: 50px;
+    }
   }
 
   .site-nav__link {
@@ -153,5 +153,66 @@
       border-radius: 2px;
       background-color: $accent-color;
     }
+  }
+
+  .contacts__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .contacts__link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @include font(12px, $medium, 14px);
+    letter-spacing: 0.02em;
+    color: $primary-text-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+
+    &--mail {
+      padding-top: 21px;
+    }
+
+    &--tel {
+      padding-bottom: 21px;
+    }
+  }
+
+  .contacts__icon {
+    margin-right: 8px;
+    fill: $primary-text-color;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+      fill: $accent-color;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+
+    &__item + &__item {
+      margin-left: 30px;
+    }
+  }
+
+  .contacts__link {
+    padding: 32px 0;
   }
 }
