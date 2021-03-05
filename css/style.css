@@ -28,7 +28,8 @@ body {
   font-weight: var(--bold-font-weight);
   letter-spacing: var(--primery-letter-spacing);
 }
-img {
+
+.img {
   display: block;
 }
 

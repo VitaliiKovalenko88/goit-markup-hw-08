@@ -1,0 +1,23 @@
+.modal-btn {
+  min-width: 200px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding: 10px 30px;
+
+  @include font(16px, $bold, 30px);
+  letter-spacing: $secondary-letter-spacing;
+  border-radius: 4px;
+  color: $primary-white-color;
+  background: $accent-color;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background: $focus-accent-color;
+  }
+}

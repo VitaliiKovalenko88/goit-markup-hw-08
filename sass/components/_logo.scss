@@ -4,6 +4,11 @@
   @include font(24px, $bold, 28px);
   color: $secondary-text-color;
 
+  &:focus,
+  &:hover {
+    color: red;
+  }
+
   &--blue {
     color: $accent-color;
   }
