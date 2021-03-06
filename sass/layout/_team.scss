@@ -1,0 +1,63 @@
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team__title {
+  padding-bottom: 30px;
+
+  @include font(28px, $bold, 33px);
+  color: $secondary-text-color;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    @include font(36px, $bold, 36px);
+  }
+}
+
+.team__item {
+  background-color: $primary-white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.team__content {
+  padding: 30px 50px 24px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+
+  @include font(16px, $medium, 19px);
+  text-align: center;
+  color: $secondary-text-color;
+}
+
+.team__profession {
+  margin-bottom: 16px;
+
+  @include font(16px, $normal, 19px);
+  text-align: center;
+  color: $primary-text-color;
+}
