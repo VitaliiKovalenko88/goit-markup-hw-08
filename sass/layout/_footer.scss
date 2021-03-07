@@ -4,20 +4,6 @@
 
   text-align: center;
   background-color: $primary-background-color;
-
-  & link {
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.address__list {
-  margin-top: 20px;
-}
-
-.address__content {
-  margin-bottom: 60px;
 }
 
 .address__list {
@@ -29,6 +15,10 @@
   font-style: normal;
   @include font();
   color: $footer-adress-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -45,17 +35,12 @@
 }
 
 .subtitle {
+  display: block;
+  margin-bottom: 20px;
+
   @include font(14px, $bold, 16px);
   text-transform: uppercase;
   color: $primary-white-color;
-}
-
-.subscribe-form {
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .subscribe-form__input {

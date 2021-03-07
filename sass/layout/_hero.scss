@@ -1,7 +1,6 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   background-size: cover;
@@ -46,8 +45,9 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    padding: 200px 0px;
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
     background-image: linear-gradient(
         to right,

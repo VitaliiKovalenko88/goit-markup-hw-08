@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
 
+  .footer & {
+    margin-bottom: 60px;
+  }
+
   .social-list__item {
     &:not(:last-child) {
       margin-right: 10px;
@@ -45,37 +49,13 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    .footer & {
+      fill: $primary-white-color;
+    }
+
     .social-list__link:hover &,
     .social-list__link:focus & {
       fill: $primary-white-color;
     }
-
-    .footer & {
-      fill: $primary-white-color;
-    }
-  }
-
-  .mobile-menu &__item {
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-    &:not(:last-child)::after {
-      content: "";
-      top: 0;
-      left: 0;
-      width: 22px;
-      height: 0px;
-      margin-left: 10px;
-
-      border: 1px solid rgba(33, 33, 33, 0.2);
-      transform: rotate(90deg);
-    }
-  }
-
-  .mobile-menu &__link {
-    @include font(18, $medium, 22);
-    letter-spacing: 0.02em;
-
-    color: $accent-color;
   }
 }
