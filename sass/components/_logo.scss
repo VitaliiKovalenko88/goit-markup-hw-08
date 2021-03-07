@@ -1,35 +1,35 @@
-.site-nav__logo {
-  font-family: Raleway;
-  font-style: normal;
+.logo {
+  display: block;
+  font-family: Raleway, sans-serif;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   @include font(24px, $bold, 28px);
   color: $secondary-text-color;
 
-  &:focus,
-  &:hover {
-    color: red;
-  }
-
-  &--blue {
+  .logo__name {
     color: $accent-color;
   }
 
-  @media screen and (min-width: 320px) {
-    padding: 16px 0;
-  }
-
   @media screen and (min-width: 768px) {
-    margin-right: 88px;
+    .header & {
+      margin-right: 88px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 93px;
+    .header & {
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
   }
-}
 
-.footer__logo {
-  color: $primary-white-color;
-}
-
-.logo__name {
-  color: $accent-color;
+  .footer & {
+    color: $primary-white-color;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }

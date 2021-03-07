@@ -1,0 +1,58 @@
+.logotype {
+  display: block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  text-decoration: none;
+  font-family: $textLogotype;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.076;
+  letter-spacing: 0.03em;
+}
+
+.logotype__link--dark {
+  color: $logotypeDarkColor;
+}
+
+.logotype__link--accent {
+  color: $accentColor;
+}
+
+.logotype__link--light {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+
+  color: $logotypeLightColor;
+
+  &:hover,
+  &:focus {
+    color: $logotypeLightColor;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logotype {
+    .page-header & {
+      margin-right: 92px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logotype {
+    margin-right: 88px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    line-height: 1.076;
+
+    .page-footer & {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+}

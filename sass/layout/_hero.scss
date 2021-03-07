@@ -23,7 +23,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    // max-width: 768px;
     background-color: $gradient-color;
 
     background-image: linear-gradient(
@@ -47,7 +47,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding: 200px 0px;
-    max-width: 100%;
+    max-width: 1600px;
 
     background-image: linear-gradient(
         to right,

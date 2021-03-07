@@ -21,7 +21,7 @@
     <div class="container">
       <!-- navigation -->
       <nav class="site-nav">
-        <a class="site-nav__logo link" href="./index.html"><span class="site-nav__logo--blue">Web</span>Studio</a>
+        <a class="logo link" href="./index.html"><span class="logo__name logo__name--blue">Web</span>Studio</a>
         <ul class="site-nav__list list">
           <li class="site-nav__item">
             <a class="site-nav__link site-nav__link--current link" href="./index.html">Студия</a>
@@ -60,10 +60,10 @@
     </div>
     <!-- MOBILE MENU -->
     <div class="mobile-menu" data-menu>
-      <button class="mobile-menu__btn button" data-menu-close>
-        <svg class="mobile-menu__icon" width="40" height="40">
-          <use href="./images/icons/sprite.svg#icon-close"></use>
-        </svg></button>
+      <div class="close"><button class="close-btn button" type="button" data-menu-close>
+          <svg class="close-btn__icon" width="40" height="40">
+            <use href="./images/icons/sprite.svg#icon-close"></use>
+          </svg></button></div>
       <ul class="mobile-nav list">
         <li class="mobile-nav__item">
           <a href="./index.html" class="mobile-nav__link mobile-nav__link--current link">Студия</a>
@@ -536,18 +536,19 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <a href="./index.html" class="footer__logo  link"><span class="logo__name">Web</span>Studio</a>
-      <div class="adress-content">
-        <adress class="adress__list">
-          <a class="adress__link adress__link--white link" href="https://goo.gl/maps/4jQuwbv64BxVn1Br7">г. Киев, пр-т
+      <a href="./index.html" class="logo link"><span class="logo__name">Web</span>Studio</a>
+      <div class="address-content">
+        <address class="address__list">
+          <a class="address__link address__link--white link" href="https://goo.gl/maps/4jQuwbv64BxVn1Br7">г. Киев, пр-т
             Леси Украинки,
             26</a>
-          <a class="adress__link link" href="mailto:info@example.com">info@example.com</a>
-          <a class="adress__link link" href="tel:+380991111111">+38 099 111 11 11</a>
-        </adress>
+          <a class="address__link link" href="mailto:info@example.com">info@example.com</a>
+          <a class="address__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+        </address>
+
       </div>
-      <div class="thumb">
-        <b class="footer__appeal">Присоединяйтесь</b>
+      <div class="footer__thumb">
+        <b class="subtitle">Присоединяйтесь</b>
         <ul class="social-list list">
           <li class="social-list__item">
             <a href="" class="social-list__link link">
@@ -580,12 +581,12 @@
         </ul>
       </div>
       <div class="form">
-        <b class="form__appeal">Подпишитесь на рассылку</b>
-        <form class="form__subscribe" action="#">
-          <input class="form__input" type="email" name="email" placeholder="E-maile">
-          <button class="form__btn button" type="submit">
+        <b class="subtitle">Подпишитесь на рассылку</b>
+        <form class="subscribe-form" action="#">
+          <input class="subscribe-form__input" type="email" name="email" placeholder="E-maile">
+          <button class="modal-btn button" type="submit">
             <span>Подписаться</span>
-            <svg class="form__icon" width="20" height="20">
+            <svg class="modal-btn__icon" width="20" height="20">
               <use href="./images/icons/sprite.svg#icon-telegram"></use>
             </svg>
           </button>

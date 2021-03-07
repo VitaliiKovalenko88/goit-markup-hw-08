@@ -13,16 +13,23 @@
   .container {
     max-width: 480px;
     margin: 0px auto;
-
-    .hero & {
-      max-width: 360px;
-    }
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+
+    .header & {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer & {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 }
 
@@ -30,8 +37,9 @@
   .container {
     max-width: 1200px;
 
-    .hero & {
-      max-width: 696px;
+    .footer & {
+      display: flex;
+      align-items: baseline;
     }
   }
 }
