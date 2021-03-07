@@ -68,14 +68,14 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
     margin: 0px auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
   .header .container {
     display: flex;
@@ -90,7 +90,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
   .footer .container {
     display: flex;
@@ -175,7 +175,7 @@ img {
   color: #212121;
 }
 
-.logo .logo__name {
+.logo__name {
   color: #2196f3;
 }
 
@@ -230,6 +230,11 @@ img {
   background-color: #2196f3;
 }
 
+.social-list .social-list__link:hover .social-list__icon,
+.social-list .social-list__link:focus .social-list__icon {
+  fill: #ffffff;
+}
+
 .footer .social-list .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
@@ -249,11 +254,6 @@ img {
 }
 
 .footer .social-list .social-list__icon {
-  fill: #ffffff;
-}
-
-.social-list__link:hover .social-list .social-list__icon,
-.social-list__link:focus .social-list .social-list__icon {
   fill: #ffffff;
 }
 

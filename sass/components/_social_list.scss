@@ -28,6 +28,11 @@
       background-color: $accent-color;
     }
 
+    &:hover .social-list__icon,
+    &:focus .social-list__icon {
+      fill: $primary-white-color;
+    }
+
     .footer & {
       background-color: $eklips-color;
 
@@ -50,11 +55,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     .footer & {
-      fill: $primary-white-color;
-    }
-
-    .social-list__link:hover &,
-    .social-list__link:focus & {
       fill: $primary-white-color;
     }
   }
