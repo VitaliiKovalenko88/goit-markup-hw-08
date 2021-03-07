@@ -61,7 +61,7 @@
     </div>
     <!-- MOBILE MENU -->
     <div class="mobile-menu" data-menu>
-      <button class="mobile-menu__btn button" data-menu-close>
+      <button class="mobile-menu__btn button" type="button" data-menu-close>
         <svg class="mobile-menu__icon" width="40" height="40">
           <use href="./images/icons/sprite.svg#icon-close"></use>
         </svg></button>
@@ -106,84 +106,85 @@
   <main>
 
     <!-- PORTFOLIO SECTION -->
-    <section class="portfolio">
+    <section class="portfolio section">
       <div class="container">
         <!-- FILTERS LIST -->
         <h1 class="visually-hidden">ФИЛЬТР</h1>
 
-        <ul class="filters-items list">
-          <li class="filters-item list">
+        <ul class="filters list">
+          <li class="filters__item list">
             <button class="modal-btn button" type="button">Все</button>
           </li>
 
-          <li class="filters-item list">
+          <li class="filters__item list">
             <button class="modal-btn button" type="button">Веб-сайты</button>
           </li>
 
-          <li class="filters-item list">
+          <li class="filters__item list">
             <button class="modal-btn button" type="button">Приложения</button>
           </li>
 
-          <li class="filters-item list">
+          <li class="filters__item list">
             <button class="modal-btn button" type="button">Дизайн</button>
           </li>
 
-          <li class="filters-item list">
+          <li class="filters__item list">
             <button class="modal-btn button" type="button">Маркетинг</button>
           </li>
         </ul>
 
         <!-- PORTFOLIO-->
         <h2 class="visually-hidden">ПОРТФОЛИО</h2>
-        <ul class="portfolio-link-list list">
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
+        <ul class="portfolio__list list">
+          <li class="portfolio__item list">
+            <a class="portfolio__link link" href="portfolio1.jpg">
 
-              <div class="overlay link" 1 <picture>
-                <source srcset="
+              <div class="overlay">
+                <picture>
+                  <source srcset="
                             ./images/img-portfolio/img-desktop-1.webp 1x, 
                             ./images/img-portfolio/img-desktop-1@2x.webp 2x" media="(min-width: 1200px)"
-                  type="image/webp">
+                    type="image/webp">
 
-                <source srcset="
+                  <source srcset="
                             ./images/img-portfolio/img-desktop-1.jpg 1x, 
                             ./images/img-portfolio/img-desktop-1@2x.jpg 2x" media="(min-width: 1200px)">
 
-                <source srcset="
+                  <source srcset="
                              ./images/img-portfolio/img-tablet-1.webp 1x, 
                              ./images/img-portfolio/img-tablet-1@2x.webp 2x" media="(min-width: 768px)"
-                  type="image/webp">
+                    type="image/webp">
 
-                <source srcset="
+                  <source srcset="
                              ./images/img-portfolio/img-tablet-1.jpg 1x, 
                              ./images/img-portfolio/img-tablet-1@2x.jpg 2x" media="(min-width: 768px)">
 
-                <source srcset="
+                  <source srcset="
                             ./images/img-portfolio/img-mobile-1.webp 1x, 
                             ./images/img-portfolio/img-mobile-1@2x.webp 2x" media="(min-width: 480px)"
-                  type="image/webp">
+                    type="image/webp">
 
-                <source srcset="
+                  <source srcset="
                             ./images/img-portfolio/img-mobile-1.jpg 1x, 
                             ./images/img-portfolio/img-mobile-1@2x.jpg 2x" media="(min-width: 480px)">
-                <img class="team__img" src="./images/img-portfolio/img-desktop-1.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-1.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="text-content">
-                <h3 class="portfolio-name-title title">Технокряк</h3>
-                <p class="portfolio-name-product part">Веб-сайт</p>
+              <div class="portfolio__content">
+                <h3 class="portfolio__product title">Технокряк</h3>
+                <p class="portfolio__category part">Веб-сайт</p>
               </div>
 
             </a>
           </li>
 
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
-              <div class="overlay link">
+          <li class="portfolio__item list">
+            <a class="portfolio__link link" href="portfolio1.jpg">
+              <div class="overlay">
                 <picture>
                   <source srcset="
                             ./images/img-portfolio/img-desktop-2.webp 1x, 
@@ -211,23 +212,23 @@
                   <source srcset="
                             ./images/img-portfolio/img-mobile-2.jpg 1x, 
                             ./images/img-portfolio/img-mobile-2@2x.jpg 2x" media="(min-width: 480px)">
-                  <img class="team__img" src="./images/img-portfolio/img-desktop-2.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-2.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="text-content">
-                <h3 class="portfolio-name-title title">Постер New Orlean vs Golden Star</h3>
-                <p class="portfolio-name-product part">Дизайн</p>
+              <div class="portfolio__content">
+                <h3 class="portfolio__product title">Постер New Orlean vs Golden Star</h3>
+                <p class="portfolio__category part">Дизайн</p>
               </div>
             </a>
           </li>
 
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
-              <div class="overlay link">
+          <li class="portfolio__item list">
+            <a class="portfolio__link link" href="portfolio1.jpg">
+              <div class="overlay">
                 <picture>
                   <source srcset="
                             ./images/img-portfolio/img-desktop-3.webp 1x, 
@@ -255,23 +256,23 @@
                   <source srcset="
                             ./images/img-portfolio/img-mobile-3.jpg 1x, 
                             ./images/img-portfolio/img-mobile-3@2x.jpg 2x" media="(min-width: 480px)">
-                  <img class="team__img" src="./images/img-portfolio/img-desktop-3.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-3.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="text-content">
-                <h3 class="portfolio-name-title title">Ресторан Seafood</h3>
-                <p class="portfolio-name-product part">Приложение</p>
+              <div class="portfolio__content">
+                <h3 class="portfolio__product title">Ресторан Seafood</h3>
+                <p class="portfolio__category part">Приложение</p>
               </div>
             </a>
           </li>
 
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
-              <div class="overlay link">
+          <li class="portfolio__item list">
+            <a class="portfolio__link link" href="portfolio1.jpg">
+              <div class="overlay">
                 <picture>
                   <source srcset="
                             ./images/img-portfolio/img-desktop-4.webp 1x, 
@@ -299,23 +300,23 @@
                   <source srcset="
                             ./images/img-portfolio/img-mobile-4.jpg 1x, 
                             ./images/img-portfolio/img-mobile-4@2x.jpg 2x" media="(min-width: 480px)">
-                  <img class="team__img" src="./images/img-portfolio/img-desktop-4.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-4.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="text-content">
-                <h3 class="portfolio-name-title title">Проект Prime</h3>
-                <p class="portfolio-name-product part">Маркетинг</p>
+              <div class="portfolio__content">
+                <h3 class="portfolio__product title">Проект Prime</h3>
+                <p class="portfolio__category part">Маркетинг</p>
               </div>
             </a>
           </li>
 
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
-              <div class="overlay link">
+          <li class="portfolio__item">
+            <a class="portfolio__link link" href="portfolio1.jpg">
+              <div class="overlay">
                 <picture>
                   <source srcset="
                             ./images/img-portfolio/img-desktop-5.webp 1x, 
@@ -343,22 +344,22 @@
                   <source srcset="
                             ./images/img-portfolio/img-mobile-5.jpg 1x, 
                             ./images/img-portfolio/img-mobile-5@2x.jpg 2x" media="(min-width: 480px)">
-                  <img class="team__img" src="./images/img-portfolio/img-desktop-5.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-5.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="text-content">
-                <h3 class="portfolio-name-title title">Проект Boxes</h3>
-                <p class="portfolio-name-product part">Приложение</p>
+              <div class="portfolio__content">
+                <h3 class="portfolio__product title">Проект Boxes</h3>
+                <p class="portfolio__category part">Приложение</p>
               </div>
             </a>
           </li>
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
-              <div class="overlay link">
+          <li class="portfolio__item list">
+            <a class="portfolio__link link" href="portfolio1.jpg">
+              <div class="overlay">
                 <picture>
                   <source srcset="
                             ./images/img-portfolio/img-desktop-6.webp 1x, 
@@ -386,23 +387,23 @@
                   <source srcset="
                             ./images/img-portfolio/img-mobile-6.jpg 1x, 
                             ./images/img-portfolio/img-mobile-6@2x.jpg 2x" media="(min-width: 480px)">
-                  <img class="team__img" src="./images/img-portfolio/img-desktop-6.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-6.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="text-content">
-                <h3 class="portfolio-name-title title">Inspiration has no Borders</h3>
-                <p class="portfolio-name-product part">Веб-сайт</p>
+              <div class="portfolio__content">
+                <h3 class="portfolio__product title">Inspiration has no Borders</h3>
+                <p class="portfolio__category part">Веб-сайт</p>
               </div>
             </a>
           </li>
 
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
-              <div class="overlay link">
+          <li class="portfolio__item list">
+            <a class="portfolio__link link" href="portfolio1.jpg">
+              <div class="overlay">
                 <picture>
                   <source srcset="
                             ./images/img-portfolio/img-desktop-7.webp 1x, 
@@ -430,23 +431,23 @@
                   <source srcset="
                             ./images/img-portfolio/img-mobile-7.jpg 1x, 
                             ./images/img-portfolio/img-mobile-7@2x.jpg 2x" media="(min-width: 480px)">
-                  <img class="team__img" src="./images/img-portfolio/img-desktop-7.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-7.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
               <div class="text-content">
-                <h3 class="portfolio-name-title title">Издание Limited Edition</h3>
-                <p class="portfolio-name-product part">Дизайн</p>
+                <h3 class="portfolio__product title">Издание Limited Edition</h3>
+                <p class="portfolio__category part">Дизайн</p>
               </div>
             </a>
           </li>
 
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
-              <div class="overlay link">
+          <li class="portfolio__item list">
+            <a class="portfolio__link link" href="portfolio1.jpg">
+              <div class="overlay">
                 <picture>
                   <source srcset="
                             ./images/img-portfolio/img-desktop-8.webp 1x, 
@@ -458,7 +459,7 @@
                             ./images/img-portfolio/img-desktop-8@2x.jpg 2x" media="(min-width: 1200px)">
 
                   <source srcset="
-                             ./images/img-index/team/img-tablet-8.webp 1x, 
+                             ./images/img-portfolio/img-tablet-8.webp 1x, 
                              ./images/img-portfolio/img-tablet-8@2x.webp 2x" media="(min-width: 768px)"
                     type="image/webp">
 
@@ -474,23 +475,23 @@
                   <source srcset="
                             ./images/img-portfolio/img-mobile-8.jpg 1x, 
                             ./images/img-portfolio/img-mobile-8@2x.jpg 2x" media="(min-width: 480px)">
-                  <img class="team__img" src="./images/img-portfolio/img-desktop-8.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-8.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="text-content">
-                <h3 class="portfolio-name-title title">Проект LAB</h3>
-                <p class="portfolio-name-product part">Маркетинг</p>
+              <div class="portfolio__content">
+                <h3 class="portfolio__product title">Проект LAB</h3>
+                <p class="portfolio__category part">Маркетинг</p>
               </div>
             </a>
           </li>
 
-          <li class="portfolio-item list">
-            <a class="portfolio-list link" href="portfolio1.jpg">
-              <div class="overlay link">
+          <li class="portfolio__item list">
+            <a class="portfolio-link link" href="portfolio1.jpg">
+              <div class="overlay">
                 <picture>
                   <source srcset="
                             ./images/img-portfolio/img-desktop-9.webp 1x, 
@@ -518,16 +519,16 @@
                   <source srcset="
                             ./images/img-portfolio/img-mobile-9.jpg 1x, 
                             ./images/img-portfolio/img-mobile-9@2x.jpg 2x" media="(min-width: 480px)">
-                  <img class="team__img" src="./images/img-portfolio/img-desktop-9.jpg" alt="член команды">
+                  <img class="overlay__img" src="./images/img-portfolio/img-desktop-9.jpg" alt="член команды">
                 </picture>
-                <p class="overlay-text part">Технокряк это современная площадка распространения коронавируса. Компании
+                <p class="overlay__text part">Технокряк это современная площадка распространения коронавируса. Компании
                   используют эту платформу для цифрового
                   шпионажа и атак на защищённые сервера конкурентов.
                 </p>
               </div>
-              <div class="text-content">
-                <h3 class="portfolio-name-title title">Growing Business</h3>
-                <p class="portfolio-name-product part">Приложение</p>
+              <div class="portfolio__content">
+                <h3 class="portfolio__product title">Growing Business</h3>
+                <p class="portfolio__category part">Приложение</p>
               </div>
             </a>
           </li>
@@ -535,60 +536,62 @@
       </div>
     </section>
   </main>
-  <!--footer-->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="address-content">
-        <a class="studio-logo link" href="./index.html" title="переход на главную страницу"><span
-            class="studio-logo-web">Web</span>Studio</a>
-        <address class="address">
-          <a class="address-name link" href="https://goo.gl/maps/4jQuwbv64BxVn1Br7">г. Киев, пр-т Леси Украинки,
+      <a href="./index.html" class="footer__logo link"><span class="logo__name">Web</span>Studio</a>
+      <div class="adress-content">
+        <adress class="adress__list">
+          <a class="adress__link adress__link--white link" href="https://goo.gl/maps/4jQuwbv64BxVn1Br7">г. Киев, пр-т
+            Леси Украинки,
             26</a>
-          <a class="link-contact link" href="mailto:info@example.com">info@example.com</a>
-          <a class="link-contact link" href="tel:+380991111111">+38 099 111 11 11</a>
-        </address>
+          <a class="adress__link link" href="mailto:info@example.com">info@example.com</a>
+          <a class="adress__link link" href="tel:+380991111111">+38 099 111 11 11</a>
+        </adress>
       </div>
-      <div class="footer-social-link-content">
-        <b class="social-link-title">Присоединяйтесь</b>
-        <ul class="social-link list">
-          <li class="social-list-item list">
-            <a href="#" class="social-link-item link">
-              <svg class="social-link-icon" width="20" height="20">
+      <div class="thumb">
+        <b class="footer__appeal">Присоединяйтесь</b>
+        <ul class="social-list list">
+          <li class="social-list__item">
+            <a href="" class="social-list__link link">
+              <svg class="social-list__icon" width="20" height="20">
                 <use href="./images/icons/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
-          <li class="social-list-item list">
-            <a href="#" class="social-link-item link">
-              <svg class="social-link-icon" width="20" height="20">
+          <li class="social-list__item">
+            <a href="" class="social-list__link link">
+              <svg class="social-list__icon" width="20" height="20">
                 <use href="./images/icons/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
-          <li class="social-list-item list">
-            <a href="#" class="social-link-item link">
-              <svg class="social-link-icon" width="20" height="20">
+          <li class="social-list__item">
+            <a href="" class="social-list__link link">
+              <svg class="social-list__icon" width="20" height="20">
                 <use href="./images/icons/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
-          <li class="social-list-item list">
-            <a href="#" class="social-link-item link">
-              <svg class="social-link-icon" width="20" height="20">
+          <li class="social-list__item">
+            <a href="" class="social-list__link link">
+              <svg class="social-list__icon" width="20" height="20">
                 <use href="./images/icons/sprite.svg#icon-linkedin"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <div class="footer-form-subscribe">
-        <b class="footer-form-title">Подпишитесь на рассылку</b>
-        <form action="#" class="footer-subscribe-form">
-          <input type="email" name="email" class="subscribe-form-input" placeholder="E-mail">
-          <button type="submit" class="subscribe-form-btn button">Подписаться
-            <svg class="subscribe-form-icon" width="24" height="24">
-              <use href="./images/icons/sprite.svg#telegram"></use>
-            </svg></button>
+      <div class="form">
+        <b class="form__appeal">Подпишитесь на рассылку</b>
+        <form class="form__subscribe" action="#">
+          <input class="form__input" type="email" name="email" placeholder="E-maile">
+          <button class="form__btn button" type="submit">
+            <span>Подписаться</span>
+            <svg class="form__icon" width="20" height="20">
+              <use href="./images/icons/sprite.svg#icon-telegram"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </div>

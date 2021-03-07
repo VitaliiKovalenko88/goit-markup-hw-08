@@ -15,6 +15,7 @@ img {
 .button {
   display: inline-block;
   cursor: pointer;
+  font-style: inherit;
 }
 
 .list {
@@ -37,4 +38,8 @@ img {
 .part {
   margin: 0px;
   padding: 0px;
+}
+
+.adress {
+  font-style: normal;
 }

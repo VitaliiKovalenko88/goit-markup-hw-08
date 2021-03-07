@@ -1,6 +1,7 @@
 .social-list {
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   .mobile-menu & {
     padding-top: 64px;
   }
@@ -54,8 +55,8 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    .social-list__link &:hover,
-    .social-list__link &:focus {
+    .social-list__link:hover &,
+    .social-list__link:focus & {
       fill: $primary-white-color;
     }
   }

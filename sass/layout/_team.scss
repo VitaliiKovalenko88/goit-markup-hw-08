@@ -8,9 +8,6 @@
   @include font(28px, $bold, 33px);
   color: $secondary-text-color;
   text-align: center;
-  @media screen and (min-width: 1200px) {
-    @include font(36px, $bold, 36px);
-  }
 }
 
 .team__item {
@@ -22,24 +19,6 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
-
-  @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-  }
 }
 
 .team__content {
@@ -49,7 +28,7 @@
 .team__name {
   margin-bottom: 10px;
 
-  @include font(16px, $medium, 19px);
+  font-weight: $medium;
   text-align: center;
   color: $secondary-text-color;
 }
@@ -60,4 +39,39 @@
   @include font(16px, $normal, 19px);
   text-align: center;
   color: $primary-text-color;
+}
+
+@media screen and (min-width: 480px) {
+  .team__item {
+    max-width: 450px;
+  }
+
+  .team__title {
+    @include font(16px, $medium, 19px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .team__item {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__item {
+    max-width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .team__title {
+    @include font(36px, $bold, 36px);
+  }
 }
