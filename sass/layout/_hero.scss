@@ -16,9 +16,9 @@
   max-width: 360px;
   @include font(26px, $black, 42px);
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: $secondary-letter-spacing;
   color: $primary-white-color;
-  text-transform: uppercase;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
@@ -36,7 +36,7 @@
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-color: $gradient-color;
+    // background-color: $gradient-color;
 
     background-image: linear-gradient(
         to right,
@@ -47,9 +47,9 @@
     background-color: $gradient-color;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-witdth: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
       background-image: linear-gradient(
           to right,
@@ -76,9 +76,9 @@
     background-color: $gradient-color;
   }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
       background-image: linear-gradient(
           to right,
