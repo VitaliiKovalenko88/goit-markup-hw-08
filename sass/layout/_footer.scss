@@ -11,6 +11,12 @@
 }
 
 .address__link {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.address__link {
   display: block;
   font-style: normal;
   @include font();
@@ -62,6 +68,16 @@
     @include font(16px, $normal, 20px);
     color: rgba(255, 255, 255, 0.6);
   }
+}
+
+.modal-btn__icon {
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  fill: var(--primary-white-color);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

@@ -157,10 +157,8 @@ img {
 }
 
 .subscribe-form .modal-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 200px;
+  position: relative;
+  padding-left: 2px;
   fill: #ffffff;
 }
 
@@ -196,9 +194,10 @@ img {
 }
 
 .footer .logo {
-  color: #ffffff;
+  margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
+  color: #ffffff;
 }
 
 .social-list {
@@ -480,6 +479,12 @@ img {
   .contacts__link:hover .contacts__icon,
   .contacts__link:focus .contacts__icon {
     fill: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -930,6 +935,10 @@ img {
   margin-bottom: 60px;
 }
 
+.address__link:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .address__link {
   display: block;
   font-style: normal;
@@ -985,6 +994,15 @@ img {
   font-weight: 400;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.modal-btn__icon {
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  fill: var(--primary-white-color);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

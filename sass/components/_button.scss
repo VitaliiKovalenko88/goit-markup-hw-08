@@ -51,10 +51,9 @@
   }
 
   .subscribe-form & {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 200px;
+    position: relative;
+    padding-left: 2px;
+
     fill: $primary-white-color;
   }
 }
