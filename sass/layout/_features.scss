@@ -22,7 +22,7 @@
   margin-bottom: 10px;
 
   @include font(14px, $bold, 16px);
-  text-align: center;
+
   text-transform: uppercase;
   color: $secondary-text-color;
 }

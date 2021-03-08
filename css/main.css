@@ -736,6 +736,7 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -807,7 +808,6 @@ img {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.143;
-  text-align: center;
   text-transform: uppercase;
   color: #212121;
 }
