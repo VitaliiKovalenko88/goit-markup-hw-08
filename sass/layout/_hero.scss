@@ -13,6 +13,7 @@
 
 .hero__title {
   margin: 0px auto 30px;
+  max-width: 360px;
   @include font(26px, $black, 42px);
   text-align: center;
   letter-spacing: $secondary-letter-spacing;
@@ -89,6 +90,6 @@
 
   .hero__title {
     @include font(44px, $black, 60px);
-    text-transform: uppercase;
+    max-width: 696px;
   }
 }

@@ -729,6 +729,7 @@ img {
 
 .hero__title {
   margin: 0px auto 30px;
+  max-width: 360px;
   font-size: 26px;
   font-weight: 900;
   line-height: 1.615;
@@ -778,7 +779,7 @@ img {
     font-size: 44px;
     font-weight: 900;
     line-height: 1.364;
-    text-transform: uppercase;
+    max-width: 696px;
   }
 }
 
