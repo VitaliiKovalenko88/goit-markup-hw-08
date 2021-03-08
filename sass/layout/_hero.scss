@@ -9,10 +9,20 @@
   background-image: linear-gradient(to right, $gradient-color, $gradient-color),
     url("../images/img-index/hero/img-mobile.jpg");
   background-color: $gradient-color;
+}
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
+.hero__title {
+  margin: 0px auto 30px;
+  @include font(26px, $black, 42px);
+  text-align: center;
+  letter-spacing: $secondary-letter-spacing;
+  color: $primary-white-color;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
     background-image: linear-gradient(
         to right,
         $gradient-color,
@@ -20,9 +30,10 @@
       ),
       url("../images/img-index/hero/img-mobile@2x.jpg");
   }
+}
 
-  @media screen and (min-width: 768px) {
-    // max-width: 768px;
+@media screen and (min-width: 768px) {
+  .hero {
     background-color: $gradient-color;
 
     background-image: linear-gradient(
@@ -32,10 +43,12 @@
       ),
       url("../images/img-index/hero/img-tablet.jpg");
     background-color: $gradient-color;
+  }
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
       background-image: linear-gradient(
           to right,
           $gradient-color,
@@ -44,7 +57,10 @@
         url("../images/img-index/hero/img-tablet@2x.jpg");
     }
   }
-  @media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -56,10 +72,12 @@
       ),
       url("../images/img-index/hero/img-desktop.jpg");
     background-color: $gradient-color;
+  }
 
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
       background-image: linear-gradient(
           to right,
           $gradient-color,
@@ -68,16 +86,8 @@
         url("../images/img-index/hero/img-desktop@2x.jpg");
     }
   }
-}
 
-.hero__title {
-  margin: 0px auto 30px;
-  @include font(26px, $black, 42px);
-  text-align: center;
-  letter-spacing: $secondary-letter-spacing;
-  color: $primary-white-color;
-
-  @media screen and (min-width: 1200px) {
+  .hero__title {
     @include font(44px, $black, 60px);
     text-transform: uppercase;
   }

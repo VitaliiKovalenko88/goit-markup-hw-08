@@ -313,14 +313,15 @@ img {
     border: none;
     padding: 0;
   }
+  .mobile-menu__close-btn:hover .close-btn__icon,
+  .mobile-menu__close-btn:focus .close-btn__icon {
+    fill: #2196f3;
+  }
   .close-btn__icon {
     fill: #212121;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .close-btn__icon:hover, .close-btn__icon:focus {
-    fill: #2196f3;
   }
   .mobile-nav {
     margin-bottom: 302px;
